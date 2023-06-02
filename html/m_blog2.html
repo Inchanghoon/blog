@@ -1,0 +1,2244 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Noto+Sans+KR&family=Tilt+Warp&display=swap" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <link rel="icon" type="image/png" sizes="16x16" href="../Favicon/favicon_io3/favicon-16x16.png">
+        <title>Changhoon's Portfolio</title>
+        <style>
+            *{ 
+                margin: 0; padding: 0; font-family: 'Noto Sans KR', sans-serif; color: #333; 
+                font-size: 62.5%; scroll-behavior: smooth; 
+            }
+            body{
+                background-color: rgb(239, 228, 176);
+                position: relative;
+                z-index: -10;
+                overflow-x:hidden; 
+            }
+            .topCutLeft{
+                width: 0; height: 0;
+                border-top: 16rem solid #5e6c6c;
+                border-right: 16rem solid transparent;
+                border-bottom: 16rem solid transparent;
+                border-left: 16rem solid #5e6c6c;
+                position: absolute;
+                z-index: 1;
+            }
+            @media all and (max-width: 76.8rem){
+                .topCutLeft{ display: none; }
+            }
+            @media all and (min-width: 76.8rem){
+                .topCutLeft{
+                    width: 0; height: 0;
+                    border-top: 16rem solid #5e6c6c;
+                    border-right: 16rem solid transparent;
+                    border-bottom: 16rem solid transparent;
+                    border-left: 16rem solid #5e6c6c;
+                    position: absolute;
+                    z-index: 1;
+                }
+            }
+            .nameICH{
+                font-size: 9rem; color: white;
+                width: 22rem; height: 6rem;
+                text-align: center; line-height: 6rem;
+                transform: rotate(315deg);
+                margin: -6.6rem 0 0 -18rem;
+                position: absolute; top: -1rem; left: 2rem;
+                font-family: 'Tilt Warp', cursive;
+                text-shadow: 0.1rem 0.1rem 0.2rem #333;
+            }
+            @media all and (max-width: 76.8rem){
+                .nameICH{ display: none; }
+            }
+            @media all and (min-width: 76.8rem){
+                .nameICH{
+                    font-size: 9rem; color: white;
+                    width: 22rem; height: 6rem;
+                    text-align: center; line-height: 6rem;
+                    transform: rotate(315deg);
+                    margin: -6.6rem 0 0 -18rem;
+                    position: absolute; top: -1rem; left: 2rem;
+                    font-family: 'Tilt Warp', cursive;
+                    text-shadow: 0.1rem 0.1rem 0.2rem #333;
+                }
+            }
+            .topCutLeftInner{
+                width: 53rem; height: 2.3rem;
+                transform: rotate(135deg);
+                position: absolute;
+                background-color: orange;
+                margin: 0 0 0 -26rem;
+            }
+            .mainBox{
+                width: 120rem; height: 428rem;
+                background-color: rgb(239, 228, 176);
+                position: relative;
+                left: 50%;
+                margin-left: -60rem;
+            }
+            @media all and (max-width: 76.8rem){
+                .mainBox{
+                    width: 100%; height: 170rem;
+                    position: relative;
+                    margin: 0 0 0 -20.5rem;
+                }
+            }
+            @media all and (min-width: 76.8rem){
+                .mainBox{
+                    width: 120rem; height: 428rem;
+                    background-color: rgb(239, 228, 176);
+                    position: relative;
+                    left: 50%;
+                    margin-left: -60rem;
+            }
+            }
+            .backImg{
+                width: 120rem; height: 82rem;
+                padding-top: 3rem;
+                background-image: url(../image/apple_macbook2.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 120rem 82rem;
+                z-index: 0;
+            }
+            @media all and (max-width: 76.8rem){
+                .backImg{
+                    width: 37.5rem; height: 25rem;
+                    background-image: url(../image/apple_macbook2.png);
+                    background-repeat: no-repeat;
+                    background-size: 37.5rem 22.86rem;
+                    background-position: center;
+                    margin: 0 auto;
+                }
+            }
+            @media all and (min-width: 76.8rem){
+                .backImg{
+                    width: 120rem; height: 82rem;
+                    padding-top: 10rem;
+                    background-image: url(../image/apple_macbook2.png);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: 120rem 82rem;
+                    z-index: 0;
+                }
+            }
+            .monitor{
+                width: 91.8rem; height: 64.1rem;
+                margin-top: -8.9rem;
+                margin-left: 14.1rem;
+                background: #333;
+            }
+            @media all and (max-width: 76.8rem){
+                .topEmpty{
+                    width: 37.5rem; height: 2.7rem;
+                }
+                .monitor{
+                    width: 28.7rem; height: 18rem;
+                    background: #333;
+                    margin: 1.2rem 0 0 4.4rem;
+                }
+            }
+            @media all and (min-width: 76.8rem){
+                .monitor{
+                    width: 91.8rem; height: 64.1rem;
+                    margin-top: -8.9rem;
+                    margin-left: 14.1rem;
+                    background: #333;
+            }
+            }
+            .videoBox{ 
+                width: 91.7rem; 
+                height: 61.2rem; 
+                background: #333; 
+                padding-top: 0.2rem;
+            }
+            @media all and (max-width: 76.8rem){
+                .videoBox{ width: 28.7rem; height: 16.14rem; }
+            }
+            @media all and (min-width: 76.8rem){
+                .videoBox{
+                    width: 91.7rem; height: 61.2rem;
+                    background: #333; padding-top: 0.2rem;
+                }
+            }
+            .topBar{
+                width: 91.6rem; height: 0rem;
+                margin-top: 10rem;
+            }
+            @media all and (max-width: 76.8rem){
+                .topBar{ display: none; }
+            }
+            @media all and (min-width: 76.8rem){
+                .topBar{
+                    width: 91.6rem; height: 0rem;
+                    margin-top: 10rem;
+                }
+            }
+            .tourVideo{
+                width: 91.4rem; 
+                margin: 0.1rem 0 0 0.1rem;
+                box-shadow: 0 0 0.1rem 0.1rem #333;
+                border-radius: 0.5rem;
+            }
+            @media all and (max-width: 76.8rem){
+                .tourVideo{
+                    width: 28.5rem; height: 16.14rem;
+                    border-radius: 0.5rem;
+                }
+            }
+            @media all and (min-width: 76.8rem){
+                .tourVideo{
+                    width: 91.4rem; 
+                    margin: 0.1rem 0 0 0.1rem;
+                    box-shadow: 0 0 0.1rem 0.1rem #333;
+                    border-radius: 0.5rem;
+            }
+            }
+            .vedioMidText{
+                font-size: 3rem;
+                color: #fff;
+                position: absolute;
+                top: 5%; left: 33%;
+                letter-spacing: 0.1rem;
+                text-shadow: 0.1rem 0.1rem 0.2rem #333;
+            }
+            @media all and (max-width: 76.8rem){
+                .vedioMidText{
+                    font-size: 1.2rem;
+                    color: white;
+                    letter-spacing: 0.1rem;
+                    text-shadow: 0.1rem 0.1rem 0.2rem #333;
+                    margin: -2rem 0 0 -1.5rem;
+                }
+            }
+            @media all and (min-width: 76.8rem){
+                .vedioMidText{
+                    font-size: 3rem;
+                    color: #fff;
+                    position: absolute;
+                    top: 5%; left: 33%;
+                    letter-spacing: 0.1rem;
+                    text-shadow: 0.1rem 0.1rem 0.2rem #333;
+                }
+            }
+            .homeText2{ top: 6%; left: 36%; }
+            @media all and (max-width: 76.8rem){
+                .homeText2{ margin: -2rem 0 0 -0.5rem; }
+            }
+            @media all and (min-width: 76.8rem){
+                .homeText2{ top: 6%; left: 36%; }
+            }
+            .homeText3{
+                top: 11%; left: 67%;
+                font-size: 7rem;
+                letter-spacing: 0.5rem;
+            }
+            @media all and (max-width: 76.8rem){
+                .homeText3{ 
+                    margin: -3rem 0 0 -1rem; 
+                    font-size: 1.8rem; 
+                    letter-spacing: 0.3rem; }
+            }
+            @media all and (min-width: 76.8rem){
+                .homeText3{
+                    top: 11%; left: 67%;
+                    font-size: 7rem;
+                    letter-spacing: 0.5rem;
+            }
+            }
+            .navBox{
+                width: 71.6rem; height: 6rem;
+                margin-top: -6.9rem;
+                margin-left: 10rem;
+                border-radius: 0.5rem;
+                transition: all linear 0.3s;
+                cursor: pointer;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+            @media all and (max-width: 76.8rem){
+                .navBox{
+                    width: 25rem; height: 1.5rem;
+                    margin: 0.2rem auto;
+                    transition: all linear 0.3s;
+                    cursor: pointer;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                }
+            }
+            @media all and (min-width: 76.8rem){
+                .navBox{
+                    width: 71.6rem; height: 6rem;
+                    margin-top: -6.9rem;
+                    margin-left: 10rem;
+                    border-radius: 0.5rem;
+                    transition: all linear 0.3s;
+                    cursor: pointer;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+            }
+            }
+            .navBox2{
+                width: 91.8rem; height: 1rem;
+                background-color: #333;
+                margin-top: 43.4rem;
+                position: absolute;
+                top: 31rem;  
+            }
+            @media all and (max-width: 76.8rem){
+                .navBox2{ display: none; }
+            }
+            @media all and (min-width: 76.8rem){
+                .navBox2{
+                    width: 91.8rem; height: 1rem;
+                    background-color: #333;
+                    margin-top: 43.4rem;
+                    position: absolute;
+                    top: 31rem;  
+            }
+            }
+            .menuBox{ 
+                margin: 0rem 1.3rem 0 1.3rem;; 
+                width: 15rem; height: 4rem;
+                background-color: #c7c700;
+                list-style: none;
+                display: inline-block;
+                border-radius: 0.8rem;
+                letter-spacing: 0.1rem;
+                box-shadow: 0 0 0.1rem 0.1rem #c7c700;
+                border: 0rem solid yellow;
+                transition: all linear 0.2s;
+                text-align: center;
+            }
+            @media all and (max-width: 76.8rem){
+                .menuBox{
+                    width: 4.3rem; height: 1.2rem;
+                    background: #c7c700;
+                    list-style: none;
+                    display: inline-block;
+                    line-height: 1.2rem;
+                    text-align: center;
+                    font-size: 0.6rem;
+                    border-radius: 0.5rem;
+                    margin-left: 0;
+                }
+            }
+            @media all and (min-width: 76.8rem){
+                .menuBox{ 
+                    margin: 1.6rem 1.3rem 0 1.3rem;; 
+                    width: 15rem; height: 4rem;
+                    background-color: #c7c700;
+                    list-style: none;
+                    display: inline-block;
+                    border-radius: 0.8rem;
+                    letter-spacing: 0.1rem;
+                    box-shadow: 0 0 0.1rem 0.1rem #c7c700;
+                    border: 0rem solid yellow;
+                    transition: all linear 0.2s;
+                    text-align: center;
+                }
+            }
+            .menuBoxA{
+                line-height: 4rem;
+                text-align: center;
+                font-size: 2rem;
+                color: #333;
+                text-decoration: none;
+                transition: all linear 0.2s;
+            }
+            @media all and (max-width: 76.8rem){
+                .menuBoxA{
+                    line-height: 1.2rem;
+                    text-align: center;
+                    color: #333;
+                    text-decoration: none;
+                    transition: all linear 0.2s;
+                    font-size: 1rem;
+                    zoom: 0.6;
+                }
+            }
+            @media all and (min-width: 76.8rem){
+                .menuBoxA{
+                    line-height: 4rem;
+                    text-align: center;
+                    font-size: 2rem;
+                    color: #333;
+                    text-decoration: none;
+                    transition: all linear 0.2s;
+                }
+            }
+            .menuBox:hover{ 
+                cursor: pointer; 
+                background-color: #ffff00; 
+                box-shadow: 0 0 0.1rem 0.1rem #ffff00; 
+            }
+            .infoMainBox{
+                width: 120rem; height: 110rem;
+                margin-top: 5rem;
+                position: relative;
+                z-index: 2;
+            }
+            @media all and (max-width: 76.8rem){
+                .infoMainBox{
+                    width: 37.5rem; height: 52rem;
+                    margin: 4rem auto;
+                    position: relative;
+                }
+            }
+            @media all and (min-width: 76.8rem){
+                .infoMainBox{
+                    width: 120rem; height: 110rem;
+                    margin-top: 5rem;
+                    position: relative;
+                    z-index: 2;
+                }
+            }
+            .aboutMePic{
+                width: 110rem; height: 110rem;
+                margin-left: 5rem;
+                background-image: url(../image/myPic1.jpg);
+                background-size: 110rem 110rem;
+                border-radius: 1rem;
+            }
+            @media all and (max-width: 76.8rem){
+                .aboutMePic{
+                    width: 37.5rem; height: 37.5rem;
+                    background-image: url(../image/myPic1.jpg);
+                    background-size: 37.5rem 37.5rem;
+                    border-radius: 1rem;
+                    margin: 0 auto;
+                }
+            }
+            @media all and (min-width: 76.8rem){
+                .aboutMePic{
+                    width: 110rem; height: 110rem;
+                    margin-left: 5rem;
+                    background-image: url(../image/myPic1.jpg);
+                    background-size: 110rem 110rem;
+                    border-radius: 1rem;
+                }
+            }
+            .cutPic1{
+                width: 0rem; height: 0rem;
+                border-top: 18rem solid rgb(239, 228, 176);
+                border-right: 18rem solid transparent;
+                border-bottom: 18rem solid transparent;
+                border-left: 18rem solid rgb(239, 228, 176);
+                /*margin-top: 15rem;*/
+            }
+            @media all and (max-width: 76.8rem){
+                .cutPic1{
+                    width: 0; height: 0;
+                    border-top: 6rem solid rgb(239, 228, 176);
+                    border-right: 6rem solid transparent;
+                    border-bottom: 6rem solid transparent;
+                    border-left: 6rem solid rgb(239, 228, 176);
+                    position: absolute; top: -0.2rem; left: -0.2rem;
+                }   
+            }
+            @media all and (min-width: 76.8rem){
+                .cutPic1{
+                    width: 0rem; height: 0rem;
+                    border-top: 18rem solid rgb(239, 228, 176);
+                    border-right: 18rem solid transparent;
+                    border-bottom: 18rem solid transparent;
+                    border-left: 18rem solid rgb(239, 228, 176);
+                    margin-top: 15rem;
+                }
+            }
+            .cutPic2{
+                width: 0; height: 0;
+                border-top: 15rem solid transparent;
+                border-right: 15rem solid rgb(239, 228, 176);
+                border-bottom: 15rem solid rgb(239, 228, 176);
+                border-left: 15rem solid transparent;
+                margin: 8.5rem 0 0 80.2rem;
+            }
+            @media all and (max-width: 76.8rem){
+                .cutPic2{
+                    width: 0; height: 0;
+                    border-top: 5rem solid transparent;
+                    border-right: 5rem solid rgb(239, 228, 176);
+                    border-bottom: 5rem solid rgb(239, 228, 176);
+                    border-left: 5rem solid transparent;
+                    margin: -47.3rem 0 0 27.7rem;
+                }
+            }
+            @media all and (min-width: 76.8rem){
+                .cutPic2{
+                    width: 0; height: 0;
+                    border-top: 15rem solid transparent;
+                    border-right: 15rem solid rgb(239, 228, 176);
+                    border-bottom: 15rem solid rgb(239, 228, 176);
+                    border-left: 15rem solid transparent;
+                    margin: 5.5rem 0 0 80.2rem;
+                }
+            }
+            .myHistory{
+                width: 28rem; height: 30rem;
+                margin: -1rem 0 0 5rem;
+                text-shadow: 0.1rem 0.1rem 0.2rem #333;
+                display: inline-block;
+            }
+            @media all and (max-width: 76.8rem){
+                .myHistory{
+                    width: 16.5rem; height: 12rem;
+                    display: inline-block;
+                    margin: 11rem 0 0 1rem;
+                    text-shadow: 0.1rem 0.1rem 0.1rem #333;
+                }
+            }
+            @media all and (min-width: 76.8rem){
+                .myHistory{
+                    width: 28rem; height: 30rem;
+                    margin: -1rem 0 0 5rem;
+                    text-shadow: 0.1rem 0.1rem 0.2rem #333;
+                    display: inline-block;
+                }
+            }
+            .emptyLine{
+                list-style: none;
+                width: 5rem; height: 2.5rem;
+                border-right: 0.2rem solid white;
+            }
+            @media all and (max-width: 76.8rem){
+                .emptyLine{
+                    list-style: none;
+                    width: 3rem; height: 1.3rem;
+                    border-right: 0.2rem solid white;
+                }
+            }
+            @media all and (min-width: 76.8rem){
+                .emptyLine{
+                    list-style: none;
+                    width: 5rem; height: 2.5rem;
+                    border-right: 0.2rem solid white;
+                }
+            }
+            .emptyLineBottom{ margin-top: -3rem; }
+            @media all and (max-width: 76.8rem){
+                .emptyLineBottom{ margin-top: -1.5rem; }
+            }
+            @media all and (min-width: 76.8rem){
+                .emptyLineBottom{ margin-top: -3rem; }
+            }
+            .listCircle{
+                width: 0.5rem; height: 0.5rem;
+                border-radius: 50%;
+                box-shadow: 0 0 0.1rem 0.1rem white;
+                position: absolute;
+                margin: -1.6rem 0 0 4.6rem;
+                background: white;
+            }
+            @media all and (max-width: 76.8rem){
+                .listCircle{
+                    width: 0.4rem; height: 0.4rem;
+                    border-radius: 50%;
+                    background: white;
+                    position: absolute;
+                    margin: -0.9rem 0 0 2.8rem;
+                }
+            }
+            @media all and (min-width: 76.8rem){
+                .listCircle{
+                    width: 0.5rem; height: 0.5rem;
+                    border-radius: 50%;
+                    box-shadow: 0 0 0.1rem 0.1rem white;
+                    position: absolute;
+                    margin: -1.6rem 0 0 4.6rem;
+                    background: white;
+                }
+            }
+            .historyText{
+                font-size: 1.6rem; color: white;
+                margin: 0.2rem 0.2rem 0.2rem 0.2rem;
+                list-style-type: none;
+                display: inline-block;
+            }
+            @media all and (max-width: 76.8rem){
+                .historyText{
+                    font-size: 1rem;
+                    color: white;
+                    margin: 0.1rem;
+                    list-style: none;
+                    display: inline-block;
+                }
+            }
+            @media all and (min-width: 76.8rem){
+                .historyText{
+                    font-size: 1.6rem; color: white;
+                    margin: 0.2rem 0.2rem 0.2rem 0.2rem;
+                    list-style-type: none;
+                    display: inline-block;
+                }
+            }
+            .historyYear{ font-style: italic; }
+            .historyDetail{ margin-left: 2rem; }
+            @media all and (max-width: 76.8rem){
+                .historyDetail{ margin-left: 1rem; }
+            }
+            @media all and (min-width: 76.8rem){
+                .historyDetail{ margin-left: 2rem; }
+            }
+            .hText1{ margin-left: 6rem;}
+            @media all and (max-width: 76.8rem){
+                .hText1{ margin-left: 3.5rem; }
+            }
+            @media all and (min-width: 76.8rem){
+                .hText1{ margin-left: 6rem; }
+            }
+            .aboutMeTextArea{
+                width: 50rem; height: 50rem;
+                background-color: transparent;
+                /*margin-left: 60rem;
+                margin-top: -27rem;*/
+                text-shadow: 0.1rem 0.1rem 0.2rem #333;
+            }
+            @media all and (max-width: 76.8rem){
+                .aboutMeTextArea{
+                    width: 15rem; height: 14rem;
+                    text-shadow: 0.1rem 0.1rem 0.1rem #333;
+                    margin: 33rem 0 0 22.5rem;
+                }
+            }
+            @media all and (min-width: 76.8rem){
+                .aboutMeTextArea{
+                    width: 50rem; height: 50rem;
+                    background-color: transparent;
+                    margin-left: 60rem;
+                    margin-top: -27rem;
+                    text-shadow: 0.1rem 0.1rem 0.2rem #333;
+                }
+            }
+            .headAM1{
+                font-size: 7rem;
+                text-align: center;
+                color: #18f2ff;
+                letter-spacing: 0.3rem;
+                margin-top: -56rem;
+                transform: rotate(15deg);
+            }
+            @media all and (max-width: 76.8rem){
+                .headAM1{
+                    font-size: 2rem;
+                    text-align: center;
+                    color: #18f2ff;
+                    letter-spacing: 0.1rem;
+                    transform: rotate(15deg);
+                }
+            }
+            @media all and (min-width: 76.8rem){
+                .headAM1{
+                    font-size: 7rem;
+                    text-align: center;
+                    color: #18f2ff;
+                    letter-spacing: 0.3rem;
+                    margin-top: -56rem;
+                    transform: rotate(15deg);
+                }
+            }
+            .headAM2{
+                font-size: 7rem;
+                color: #ef3945;
+                letter-spacing: 0.2rem;
+                text-align: center;
+                margin: 1rem 0 0 -24rem; 
+                transform: rotate(350deg);
+            }
+            @media all and (max-width: 76.8rem){
+                .headAM2{
+                    font-size: 2rem;
+                    color: #ef3945;
+                    letter-spacing: 0.1rem;
+                    text-align: center;
+                    transform: rotate(350deg);
+                    margin: 1rem 0 0 -5rem;
+                }
+            }
+            @media all and (min-width: 76.8rem){
+                .headAM2{
+                    font-size: 7rem;
+                    color: #ef3945;
+                    letter-spacing: 0.2rem;
+                    text-align: center;
+                    margin: 1rem 0 0 -24rem; 
+                    transform: rotate(350deg);
+                }
+            }
+            .headAM3{ 
+                color: #dfb469; 
+                transform: rotate(340deg);
+                margin: -2rem 0 0 15rem;
+            }
+            @media all and (max-width: 76.8rem){
+                .headAM3{
+                    color: #dfb469;
+                    transform: rotate(340deg);
+                    margin: -1rem 0 0 5rem;
+                }
+            }
+            @media all and (min-width: 76.8rem){
+                .headAM3{ 
+                    color: #dfb469; 
+                    transform: rotate(340deg);
+                    margin: -2rem 0 0 15rem;
+                }
+            }
+            .headAM4{ 
+                color: #2adb2a; 
+                transform: rotate(30deg);
+                margin: 0rem 0 0 -15rem;
+            }
+            @media all and (max-width: 76.8rem){
+                .headAM4{
+                    color: #2adb2a;
+                    transform: rotate(30deg);
+                    margin: 0 0 0 -4rem;
+                }
+            }
+            @media all and (min-width: 76.8rem){
+                .headAM4{ 
+                    color: #2adb2a; 
+                    transform: rotate(30deg);
+                    margin: 0rem 0 0 -15rem;
+                }
+            }
+            .contactMainBox{
+                width: 49.5rem; height: 20rem;
+                background: #111;
+                border-radius: 1rem;
+                margin: -4rem 0 0 57rem;
+                box-shadow: 0 0 0.1rem 0.1rem #333;
+            }
+            @media all and (max-width: 76.8rem){
+                .contactMainBox{
+                    width: 28rem; height: 11rem;
+                    background: #111;
+                    border-radius: 0.7rem;
+                    margin: 24rem auto;
+                    position: relative;
+                    z-index: 1;
+                }
+            }
+            @media all and (min-width: 76.8rem){
+                .contactMainBox{
+                    width: 49.5rem; height: 20rem;
+                    background: #111;
+                    border-radius: 1rem;
+                    margin: -4rem 0 0 57rem;
+                    box-shadow: 0 0 0.1rem 0.1rem #333;
+                }
+            }
+            .showInfo{
+                width: 50rem; height: 2rem;
+                font-size: 1.6rem;
+                color: #808073;
+                line-height: 2rem;
+                letter-spacing: 0.1rem;
+                margin: 0.2rem 0 0 2rem;
+                text-decoration: none;
+            }
+            @media all and (max-width: 76.8rem){
+                .showInfo{
+                    width: 28rem; height: 1rem;
+                    font-size: 0.6rem;
+                    color: #808073;
+                    line-height: 1rem;
+                    text-decoration: none;
+                    margin: 0.3rem 0 0 1rem;
+                }
+            }
+            @media all and (min-width: 76.8rem){
+                .showInfo{
+                    width: 50rem; height: 2rem;
+                    font-size: 1.6rem;
+                    color: #808073;
+                    line-height: 2rem;
+                    letter-spacing: 0.1rem;
+                    margin: 0.2rem 0 0 2rem;
+                    text-decoration: none;
+                }
+            }
+            .showInfo1{ padding-top: 1rem; }
+            @media all and (max-width: 76.8rem){
+                .showInfo1{ padding-top: 0.2rem; }
+            }
+            @media all and (min-width: 76.8rem){
+                .showInfo1{ padding-top: 1rem; }
+            }
+            .showInfo2, .showInfo7{ margin-left: 5rem; }
+            @media all and (max-width: 76.8rem){
+                .showInfo2, .showInfo7{ margin-left: 2.2rem; }
+            }
+            @media all and (min-width: 76.8rem){
+                .showInfo2, .showInfo7{ margin-left: 5rem; }
+            }
+            .showInfo3, .showInfo4, .showInfo5, .showInfo6{ margin-left: 8rem; }
+            @media all and (max-width: 76.8rem){
+                .showInfo3, .showInfo4, .showInfo5, .showInfo6{ margin-left: 4rem; }
+            }
+            @media all and (min-width: 76.8rem){
+                .showInfo3, .showInfo4, .showInfo5, .showInfo6{ margin-left: 8rem; }
+            }
+            .fontS{ font-size: 1.6rem; }
+            @media all and (max-width: 76.8rem){
+                .fontS{ font-size: 1rem; zoom: 0.8; }
+            }
+            @media all and (min-width: 76.8rem){
+                .fontS{ font-size: 1.6rem; }
+            }
+            .tagColor{ color: #569cd6; }
+            .lemonColor{ color: #d0dcaa; }
+            .yellowColor{ color: yellow; }
+            .orangeColor{ color: #ce723b; }
+            .whiteColor{ color: white; }
+            .purpleColor{ color: #da63a1; }
+            .blueColor{ color: rgb(34, 34, 255); }
+            .showInfo a{ text-decoration: none; }
+            
+            .goTop{
+                width: 4.2rem; height: 4.2rem;
+                background-color: transparent;
+                border: 0rem solid #aaa;
+                border-radius: 50%;
+                font-size: 4.2rem;
+                text-align: center;
+                line-height: 5rem;
+                color: black;
+                box-shadow: 0 0 0.1rem 0.3rem black;
+                position: fixed;
+                top: 94%; left: 50%;
+                margin-left: -2rem;
+                cursor: pointer;
+                text-decoration: none;
+                z-index: 3;
+            }
+            @media all and (max-width: 76.8rem){
+                .goTop{ display: none; }
+            }
+            @media all and (min-width: 76.8rem){
+                .goTop{
+                    width: 4.2rem; height: 4.2rem;
+                    background-color: transparent;
+                    border: 0rem solid #aaa;
+                    border-radius: 50%;
+                    font-size: 4.2rem;
+                    text-align: center;
+                    line-height: 5rem;
+                    color: black;
+                    box-shadow: 0 0 0.1rem 0.3rem black;
+                    position: fixed;
+                    top: 94%; left: 50%;
+                    margin-left: -2rem;
+                    cursor: pointer;
+                    text-decoration: none;
+                    z-index: 3;
+                }
+            }
+            .goTop:hover{ box-shadow: 0 0 0.1rem 0.3rem #111; color: #111; }
+            .iCanDoMainBox{
+                width: 120rem; height: 194rem;
+                margin-top: 14rem;
+                position: relative;
+                background-image: url(../image/iCanBack3.png);
+                background-size: 120rem 200rem;
+                z-index: 1;
+                border-radius: 0 0 2.5rem 2.5rem;
+            }
+            @media all and (max-width: 76.8rem){
+                .iCanDoMainBox{
+                    width: 37.5rem; height: 50rem;
+                    background-image: url(../image/iCanBack3.png);
+                    background-repeat: no-repeat;
+                    background-size: 37.5rem 50rem;
+                    margin: 3rem auto;
+                    position: relative;
+                }
+            }
+            @media all and (min-width: 76.8rem){
+                .iCanDoMainBox{
+                    width: 120rem; height: 194rem;
+                    margin-top: 14rem;
+                    position: relative;
+                    background-image: url(../image/iCanBack3.png);
+                    background-size: 120rem 200rem;
+                    z-index: 1;
+                    border-radius: 0 0 2.5rem 2.5rem;
+                }
+            }
+            .leftSide{
+                width: 0rem; height: 0rem;
+                border-top: 30rem solid #5e6c6c;
+                border-left: 30rem solid #5e6c6c;
+                border-right: 36rem solid transparent;
+                border-bottom: 25rem solid transparent;
+                position: absolute;
+                top: -19rem; left: 0rem;
+            }
+            @media all and (max-width: 76.8rem){
+                .leftSide{
+                    width: 0; height: 0;
+                    border-top: 7rem solid #5e6c6c;
+                    border-right: 10rem solid transparent;
+                    border-bottom: 5rem solid transparent;
+                    border-left: 7rem solid #5e6c6c;
+                    position: absolute;
+                    top: -6rem;
+                    z-index: -1;
+                }
+            }
+            @media all and (min-width: 76.8rem){
+                .leftSide{
+                    width: 0rem; height: 0rem;
+                    border-top: 30rem solid #5e6c6c;
+                    border-left: 30rem solid #5e6c6c;
+                    border-right: 36rem solid transparent;
+                    border-bottom: 25rem solid transparent;
+                    position: absolute;
+                    top: -19rem; left: 0rem;
+                }
+            }
+            .rightSide{
+                width: 120rem; height: 200rem;
+                position: absolute;
+                z-index: -2;
+                border-radius: 0 0 1rem 1rem;
+            }
+            .rightSideTop{
+                width: 0; height: 0;
+                border-top: 60rem solid transparent;
+                border-right: 60rem solid #5e6c6c;
+                border-bottom: 60rem solid #5e6c6c;
+                border-left: 60rem solid transparent;
+            }
+            .rightSideBottom{
+                width: 120rem; height: 74rem;
+                background: #5e6c6c;
+                border-radius: 0 0 1rem 1rem;
+            }
+            .rightBottomEmpty{
+                width: 0; height: 0;
+                border-top: 30rem solid transparent;
+                border-right: 30rem solid rgb(239, 228, 176);
+                border-bottom: 30rem solid rgb(239, 228, 176);
+                border-left: 30rem solid transparent;
+                position: absolute;
+                top: 134rem; left: 60rem;
+            }
+            @media all and (max-width: 76.8rem){
+                .rightSide, .rightSideTip, .rightSideBottom, .rightBottomEmpty{
+                    display: none;
+                }
+            }
+            @media all and (min-width: 76.8rem){
+                .rightSide{
+                    width: 120rem; height: 200rem;
+                    position: absolute;
+                    z-index: -2;
+                    border-radius: 0 0 1rem 1rem;
+                }
+                .rightSideTop{
+                    width: 0; height: 0;
+                    border-top: 60rem solid transparent;
+                    border-right: 60rem solid #5e6c6c;
+                    border-bottom: 60rem solid #5e6c6c;
+                    border-left: 60rem solid transparent;
+                }
+                .rightSideBottom{
+                    width: 120rem; height: 74rem;
+                    background: #5e6c6c;
+                    border-radius: 0 0 1rem 1rem;
+                }
+                .rightBottomEmpty{
+                    width: 0; height: 0;
+                    border-top: 30rem solid transparent;
+                    border-right: 30rem solid rgb(239, 228, 176);
+                    border-bottom: 30rem solid rgb(239, 228, 176);
+                    border-left: 30rem solid transparent;
+                    position: absolute;
+                    top: 134rem; left: 60rem;
+                }
+            }
+            .iCanDoHeadBox{
+                width: 120rem; height: 10rem;
+                display: flex;
+                justify-content: center;
+            }
+            @media all and (max-width:76.8rem){
+                .iCanDoHeadBox{
+                    width: 37.5rem; height: 5rem;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+            @media all and (min-width:76.8rem){
+                .iCanDoHeadBox{
+                    width: 120rem; height: 10rem;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+            .clickImg{
+                width: 30rem; height: 15rem;
+                position: absolute;
+                transform: rotate(320deg);
+                top: 23rem; left: 9rem;
+                animation-name: clickImage;
+                animation-duration: 2.5s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes clickImage{
+                0% { top: 7.5rem; left: 1rem; }
+            }
+            .click1{
+                width: 29rem; height: 6rem;
+                background: white;
+                border: 1rem solid #f95959;
+                text-align: center;
+                line-height: 6rem;
+                border-radius: 10rem;
+                font-size: 5rem;
+                font-family: 'Tilt Warp', cursive;
+                letter-spacing: 0.3rem;
+            }
+            .click2{
+                width: 0; height: 0;
+                border-top: 3rem solid #f95959;
+                border-right: 5rem solid transparent;
+                border-bottom: 5rem solid transparent;
+                border-left: 5rem solid transparent;
+                margin: 1rem 0 0 10rem;
+            }
+            @media all and (max-width:76.8rem){
+                .clickImg, .click1, .click2{
+                    display: none;
+                }
+            }
+            @media all and (min-width:76.8rem){
+                .clickImg{
+                    width: 30rem; height: 15rem;
+                    position: absolute;
+                    transform: rotate(320deg);
+                    top: 23rem; left: 9rem;
+                    animation-name: clickImage;
+                    animation-duration: 2.5s;
+                    animation-iteration-count: infinite;
+                }
+                @keyframes clickImage{
+                    0% { top: 7.5rem; left: 1rem; }
+                }
+                .click1{
+                    width: 29rem; height: 6rem;
+                    background: white;
+                    border: 1rem solid #f95959;
+                    text-align: center;
+                    line-height: 6rem;
+                    border-radius: 10rem;
+                    font-size: 5rem;
+                    font-family: 'Tilt Warp', cursive;
+                    letter-spacing: 0.3rem;
+                }
+                .click2{
+                width: 0; height: 0;
+                border-top: 3rem solid #f95959;
+                border-right: 5rem solid transparent;
+                border-bottom: 5rem solid transparent;
+                border-left: 5rem solid transparent;
+                margin: 1rem 0 0 10rem;
+            }
+            }
+            .iCanDoTitle{
+                width: 26rem; height: 8rem;
+                background: white;
+                font-size: 6rem;
+                line-height: 9rem;
+                text-align: center;
+                font-family: 'Kalam', cursive;
+                box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem #333;
+                border-radius: 1rem;
+                margin-top: 4rem;
+            }
+            @media all and (max-width:76.8rem){
+                .iCanDoTitle{
+                    width: 11rem; height: 4rem;
+                    background: white;
+                    font-size: 2.5rem;
+                    line-height: 4rem;
+                    text-align: center;
+                    font-family: 'Kalam', cursive;
+                    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem #333;
+                    border-radius: 0.8rem;
+                    margin-top: 0.5rem;
+                }
+            }
+            @media all and (min-width:76.8rem){
+                .iCanDoTitle{
+                    width: 26rem; height: 8rem;
+                    background: white;
+                    font-size: 6rem;
+                    line-height: 9rem;
+                    text-align: center;
+                    font-family: 'Kalam', cursive;
+                    box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem #333;
+                    border-radius: 1rem;
+                    margin-top: 4rem;
+                }
+            }
+            .programPicBox{
+                width: 110rem; height: 80rem;
+                margin: 1rem 0 0 5rem;
+                display: inline-block;
+            }
+            @media all and (max-width:76.8rem){
+                .programPicBox{
+                    width: 37.5rem; height: 32rem;
+                    display: inline-block;
+                    margin: 1rem 0 0 0;
+                }
+            }
+            @media all and (min-width:76.8rem){
+                .programPicBox{
+                    width: 110rem; height: 80rem;
+                    margin: 1rem 0 0 5rem;
+                    display: inline-block;
+                }
+            }
+            .picBox{
+                width: 14rem; height: 14rem;
+                border-radius: 50%;
+                background-color: white;
+                display: inline-block;
+                margin: 5rem 0 0 5rem;
+                box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem #555;
+                border: 0rem solid #555;
+                position: absolute
+            }
+            @media all and (max-width:76.8rem){
+                .picBox{
+                    width: 6rem; height: 6rem;
+                    border-radius: 50%;
+                    background: white;
+                    display: inline-block;
+                    margin: 0 0 0 0;
+                    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem #555;
+                    position: absolute;
+                }
+            }
+            @media all and (min-width:76.8rem){
+                .picBox{
+                    width: 14rem; height: 14rem;
+                    border-radius: 50%;
+                    background-color: white;
+                    display: inline-block;
+                    margin: 5rem 0 0 5rem;
+                    box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem #555;
+                    border: 0rem solid #555;
+                    position: absolute
+                }
+            }
+            .programPic{
+                width: 16rem; height: 11.08rem;
+                margin-top: 1.5rem; margin-left: -0.5rem;
+                cursor: pointer;
+                transition: all linear 0.5s;
+            }
+            @media all and (max-width:76.8rem){
+                .programPic{
+                    width: 7rem; height: 4.85rem;
+                    cursor: pointer;
+                    margin: 0.5rem 0 0 -0.4rem;
+                    transition: all linear 0.5s;
+                }
+            }
+            @media all and (min-width:76.8rem){
+                .programPic{
+                    width: 16rem; height: 11.08rem;
+                    margin-top: 1.5rem; margin-left: -0.5rem;
+                    cursor: pointer;
+                    transition: all linear 0.5s;
+                }
+            }
+            .nodePic{ width: 8.66rem; height: 10rem; margin: 2rem 0 0 3rem; }
+            .sqlPic{ width: 8rem; height: 8rem; margin: 2.5rem 0 0 3rem; }
+            @media all and (max-width:76.8rem){
+                .nodePic{
+                    width: 3.89rem; height: 4.5rem; margin: 0.8rem 0 0 1.2rem;
+                }
+                .sqlPic{
+                    width: 4rem; height: 4rem; margin: 0.8rem 0 0 1.2rem;
+                }
+            }
+            @media all and (min-width:76.8rem){
+                .nodePic{ width: 8.66rem; height: 10rem; margin: 2rem 0 0 3rem; }
+                .sqlPic{ width: 8rem; height: 8rem; margin: 2.5rem 0 0 3rem; }
+            }
+            .javaPic{ margin: 1rem 0 0 -1rem; }
+            .jqueryPic{ margin-top: 2rem; }
+            @media all and (max-width:76.8rem){
+                .javaPic{ margin: 0.4rem 0 0 -0.4rem; }
+                .jqueryPic{ margin-top: 0.8rem; }
+            }
+            @media all and (min-width:76.8rem){
+                .javaPic{ margin: 1rem 0 0 -1rem; }
+                .jqueryPic{ margin-top: 2rem; }
+            }
+            .programPic:hover{ transform: rotate(360deg); }
+            .htmlPicBox{ top: 13rem; left: 36rem; }
+            .cssPicBox{ top: 33rem; left: 24rem; }
+            .jsPicBox{ top: 13rem; left: 60rem; }
+            .jqueryPicBox{ top: 33rem; left: 73rem; }
+            .javaPicBox{ top: 33rem; left: 48rem; }
+            .sassPicBox{ top: 54rem; left: 35rem; }
+            .nodePicBox{ top: 54rem; left: 10rem; }
+            .sqlPicBox{ top: 54rem; left: 60rem; }
+            .pugPicBox{ top: 54rem; left: 86rem; }
+            @media all and (max-width:76.8rem){
+                .htmlPicBox{ top: 7rem; left: 11rem; }
+                .cssPicBox{ top: 16rem; left: 7rem; }
+                .jsPicBox{ top: 7rem; left: 21rem; }
+                .jqueryPicBox{ top: 16rem; left: 25rem; }
+                .javaPicBox{ top: 16rem; left: 16rem; }
+                .sassPicBox{ top: 25rem; left: 12rem; }
+                .nodePicBox{ top: 25rem; left: 4rem; }
+                .sqlPicBox{ top: 25rem; left: 20rem; }
+                .pugPicBox{ top: 25rem; left: 28rem; }
+            }
+            @media all and (min-width:76.8rem){
+                .htmlPicBox{ top: 13rem; left: 36rem; }
+                .cssPicBox{ top: 33rem; left: 24rem; }
+                .jsPicBox{ top: 13rem; left: 60rem; }
+                .jqueryPicBox{ top: 33rem; left: 73rem; }
+                .javaPicBox{ top: 33rem; left: 48rem; }
+                .sassPicBox{ top: 54rem; left: 35rem; }
+                .nodePicBox{ top: 54rem; left: 10rem; }
+                .sqlPicBox{ top: 54rem; left: 60rem; }
+                .pugPicBox{ top: 54rem; left: 86rem; }
+            }
+            .iCanDoModal{
+                width: 40rem; height: 30rem;
+                background-color: white;
+                position: absolute;
+                top: 32rem; left: 40rem;
+                border-radius: 1.5rem;
+                box-shadow: 0 0 0.2rem 0.2rem #444;
+                display: none;
+            }
+            .modalTop{
+                width: 40rem; height: 7rem;
+                border-bottom: 0.1rem solid #333;
+                text-align: center;
+                line-height: 7rem;
+                padding: 0.2rem 0 0.2rem 0;
+            }
+            .modalHeadText{ font-size: 2.5rem; letter-spacing: 0.3rem; }
+            .modalMid{ width: 40rem; height:16rem; border-bottom: 0.1rem solid #333; }
+            .modalMidText{
+                font-size: 2rem;
+                letter-spacing: 0.2rem;
+                line-height: 3rem;
+                padding: 1.5rem 2rem 0 2rem;
+            }
+            .closeBox2{
+                width: 40rem; height: 6.4rem;
+                background-color: #ededf9;
+                text-align: center;
+                line-height: 6.4rem;
+                font-size: 2.5rem;
+                border-radius: 0 0 1.5rem 1.5rem;
+                letter-spacing: 0.5rem;
+                cursor: pointer;
+                transition: all linear 0.2s;
+            }
+            .closeBox2:hover{ background-color: #dfdfeb; }
+            @media all and (max-width:76.8rem){
+                .iCanDoModal{
+                    width: 12rem; height: 10rem;
+                    background: white;
+                    position: absolute;
+                    top: 12rem; left: 13rem;
+                    border-radius: 1rem;
+                    box-shadow: 0 0 0.1rem 0.1rem #444;
+                    display: none;
+                }
+                .modalTop{
+                    width: 12rem; height: 2.5rem;
+                    border-bottom: 0.1rem solid #333;
+                    text-align: center;
+                    line-height: 2.5rem;
+                    padding: 0rem 0 0rem 0;
+                }
+                .modalHeadText{ font-size: 1.2rem; letter-spacing: 0.1rem; }
+                .modalMid{
+                    width: 12rem; height: 5rem; border-bottom: 0.1rem solid #333;
+                }
+                .modalMidText{
+                    font-size: 1rem; zoom: 0.8;
+                    letter-spacing: 0.1rem;
+                    line-height: 1.3rem;
+                    padding: 0.5rem 1rem 0 1rem;
+                }
+                .closeBox2{
+                    width: 12rem; height: 2.3rem;
+                    background-color: #ededf9;
+                    text-align: center;
+                    line-height: 2.3rem;
+                    font-size: 1.2rem;
+                    border-radius: 0 0 1rem 1rem;
+                    letter-spacing: 0.2rem;
+                    cursor: pointer;
+                    transition: all linear 0.2s;
+                }
+            }
+            @media all and (min-width:76.8rem){
+                .iCanDoModal{
+                    width: 40rem; height: 30rem;
+                    background-color: white;
+                    position: absolute;
+                    top: 32rem; left: 40rem;
+                    border-radius: 1.5rem;
+                    box-shadow: 0 0 0.2rem 0.2rem #444;
+                    display: none;
+                }
+                .modalTop{
+                    width: 40rem; height: 7rem;
+                    border-bottom: 0.1rem solid #333;
+                    text-align: center;
+                    line-height: 7rem;
+                    padding: 0.2rem 0 0.2rem 0;
+                }
+                .modalHeadText{ font-size: 2.5rem; letter-spacing: 0.3rem; }
+                .modalMid{ width: 40rem; height:16rem; border-bottom: 0.1rem solid #333; }
+                .modalMidText{
+                    font-size: 2rem;
+                    letter-spacing: 0.2rem;
+                    line-height: 3rem;
+                    padding: 1.5rem 2rem 0 2rem;
+                }
+                .closeBox2{
+                    width: 40rem; height: 6.4rem;
+                    background-color: #ededf9;
+                    text-align: center;
+                    line-height: 6.4rem;
+                    font-size: 2.5rem;
+                    border-radius: 0 0 1.5rem 1.5rem;
+                    letter-spacing: 0.5rem;
+                    cursor: pointer;
+                    transition: all linear 0.2s;
+                }
+            }
+            .portfolioMainBox{
+                width: 120rem; height: 95rem;
+                margin-top: 8rem;
+            }
+            @media all and (max-width:76.8rem){
+                .portfolioMainBox{
+                    width: 37.5rem; height: 40rem;
+                    margin-top: 0rem;
+                    background: #5e6c6c;
+                    border-radius: 0 0 1rem 1rem;
+                }
+            }
+            @media all and (min-width:76.8rem){
+                .portfolioMainBox{
+                    width: 120rem; height: 95rem;
+                    margin-top: 8rem;
+                }
+            }
+            .portfolioTitle{
+                width: 35rem; height: 8rem;
+                background: white;
+                font-size: 6rem;
+                line-height: 9rem;
+                text-align: center;
+                font-family: 'Kalam', cursive;
+                box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem #333;
+                border-radius: 1rem;
+                margin: 4rem auto;
+            }
+            @media all and (max-width:76.8rem){
+                .portfolioTitle{
+                    width: 14rem; height: 4rem;
+                    background: white;
+                    font-size: 2.5rem;
+                    line-height: 4.6rem;
+                    text-align: center;
+                    font-family: 'Kalam', cursive;
+                    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem #333;
+                    border-radius: 1rem;
+                    margin: 0rem auto;
+                }               
+            }
+            @media all and (min-width:76.8rem){
+                .portfolioTitle{
+                width: 35rem; height: 8rem;
+                background: white;
+                font-size: 6rem;
+                line-height: 9rem;
+                text-align: center;
+                font-family: 'Kalam', cursive;
+                box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem #333;
+                border-radius: 1rem;
+                margin: 4rem auto;
+            }
+            }
+            .portfolioBottomBox{
+                width: 120rem; height: 82rem;
+                margin-top: 3rem;
+                display: flex;
+                justify-content: space-around;
+            }
+            @media all and (max-width:76.8rem){
+                .portfolioBottomBox{
+                    width: 37.5rem; height: 33rem;
+                    margin-top: 1rem;
+                    display: flex;
+                    flex-direction: column-reverse;
+                    justify-content: space-between;
+                }
+            }
+            @media all and (min-width:76.8rem){
+                .portfolioBottomBox{
+                    width: 120rem; height: 82rem;
+                    margin-top: 3rem;
+                    display: flex;
+                    justify-content: space-around;
+                }
+            }
+            .directoryMainBox{
+                width: 20rem; height: 23rem;
+                margin-left: 2rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            }
+            @media all and (max-width:76.8rem){
+                .directoryMainBox{
+                    width: 33rem; height: 6rem;
+                    margin-left: 2.2rem;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                }
+            }
+            @media all and (min-width:76.8rem){
+                .directoryMainBox{
+                    width: 20rem; height: 23rem;
+                    margin-left: 2rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                }
+            }
+            .directoryBox{ width: 16.26rem; height: 13rem; }
+            .sameDirectory{ width: 7rem; margin: 1rem 0 0 4.5rem; cursor: pointer; }
+            @media all and (max-width:76.8rem){
+                .directoryBox{ width: 5rem; height: 5rem; }
+                .sameDirectory{ width: 4rem; margin: 0 0 0 0.5rem; cursor: pointer; }
+            }
+            @media all and (min-width:76.8rem){
+                .directoryBox{ width: 16.26rem; height: 13rem; }
+                .sameDirectory{ width: 7rem; margin: 1rem 0 0 4.5rem; cursor: pointer; }
+            }
+            .sameDirectory:active{ opacity: 0.7; }
+            .directory2{ border-radius: 1rem; }
+            .figText{ font-size: 1.6rem; text-align: center; color: white; }
+            @media all and (max-width:76.8rem){
+                .figText{ font-size: 1rem; text-align: center; color: white; }
+            }
+            @media all and (min-width:76.8rem){
+                .figText{ font-size: 1.6rem; text-align: center; color: white; }
+            }
+            .portfolioPrintMainBox{
+                width: 94rem; height: 83rem;
+            }
+            @media all and (max-width:76.8rem){
+                .portfolioPrintMainBox{ 
+                    width: 37.5rem; 
+                    height: 30rem; 
+                    margin-top: 1rem;
+                }
+            }
+            @media all and (min-width:76.8rem){
+                .portfolioPrintMainBox{ width: 94rem; height: 83rem; }
+            }
+            .chromeDisplay{
+                width: 92rem; height: 78rem;
+                margin: 1rem 0 0 -3rem;
+                border-radius: 0.5rem;
+                box-shadow: 0 0 0.2rem 0.2rem #333;
+            }
+            @media all and (max-width:76.8rem){
+                .chromeDisplay{
+                    width: 37.5rem; height: 25rem;
+                    margin: 0rem 0 0 0rem;
+                    border-radius: 0.5rem;
+                    box-shadow: 0 0 0.1rem 0.1rem #333;
+                }
+            }
+            @media all and (min-width:76.8rem){
+                .chromeDisplay{
+                    width: 92rem; height: 78rem;
+                    margin: 1rem 0 0 -3rem;
+                    border-radius: 0.5rem;
+                    box-shadow: 0 0 0.2rem 0.2rem #333;
+                }
+            }
+            .fileTopBar{
+                width: 92rem; height: 3rem;
+                background: #e1e1e3;
+                border-radius: 0.5rem 0.5rem 0 0;
+                font-size: 1.4rem; line-height: 2rem;
+                text-align: center;
+                letter-spacing: 0.1rem;
+                display: flex;
+                border-bottom: 0.3rem solid white;
+            }
+            @media all and (max-width:76.8rem){
+                .fileTopBar{
+                    width: 37.5rem; height: 2rem;
+                    background: #e1e1e3;
+                    border-radius: 0.5rem 0.5rem 0 0;
+                    font-size: 1rem; line-height: 2rem;
+                    text-align: center;
+                    letter-spacing: 0.1rem;
+                    display: flex;
+                    border-bottom: 0.2rem solid white;
+                }
+            }
+            @media all and (min-width:76.8rem){
+                .fileTopBar{
+                    width: 92rem; height: 3rem;
+                    background: #e1e1e3;
+                    border-radius: 0.5rem 0.5rem 0 0;
+                    font-size: 1.4rem; line-height: 2rem;
+                    text-align: center;
+                    letter-spacing: 0.1rem;
+                    display: flex;
+                    border-bottom: 0.3rem solid white;
+                }
+            }
+            .fileLeftEmpty{
+                width: 1rem; height: 3rem;
+                background: #e1e1e3;
+                border-radius: 0.5rem 0 1.5rem 0;
+            }
+            @media all and (max-width:76.8rem){
+                .fileLeftEmpty{
+                    width: 0.5rem; height: 2rem;
+                    background: #e1e1e3;
+                    border-radius: 0.5rem 0 0.8rem 0;
+                }
+            }
+            @media all and (min-width:76.8rem){
+                .fileLeftEmpty{
+                    width: 1rem; height: 3rem;
+                    background: #e1e1e3;
+                    border-radius: 0.5rem 0 1.5rem 0;
+                }
+            }
+            .fileName{
+                width: 20rem; height: 3rem;
+                background: white;
+                border-radius: 1rem 1rem 0 0;
+                font-size: 1.6rem;
+                text-align: left;
+                line-height: 3rem;
+                padding-left: 1rem;
+            }
+            @media all and (max-width:76.8rem){
+                .fileName{
+                    width: 8rem; height: 2rem;
+                    background: white;
+                    border-radius: 1rem 1rem 0 0;
+                    font-size: 0.8rem; 
+                    text-align: left;
+                    line-height: 2rem;
+                    padding-left: 0.5rem;
+                }
+            }
+            @media all and (min-width:76.8rem){
+                .fileName{
+                    width: 20rem; height: 3rem;
+                    background: white;
+                    border-radius: 1rem 1rem 0 0;
+                    font-size: 1.6rem;
+                    text-align: left;
+                    line-height: 3rem;
+                    padding-left: 1rem;
+                }
+            }
+            .fileRightEmpty{
+                width: 70rem; height: 3rem;
+                background: #e1e1e3;
+                display: flex;
+                justify-content: flex-end;
+                border-radius: 0 0.5rem 0 0;
+            }
+            @media all and (max-width:76.8rem){
+                .fileRightEmpty{
+                    width: 28.5rem; height: 2rem;
+                    background: #e1e1e3;
+                    display: flex;
+                    justify-content: flex-end;
+                    border-radius: 0 0.5rem 0 0;
+                }
+            }
+            @media all and (min-width:76.8rem){
+                .fileRightEmpty{
+                    width: 70rem; height: 3rem;
+                    background: #e1e1e3;
+                    display: flex;
+                    justify-content: flex-end;
+                    border-radius: 0 0.5rem 0 0;
+                }
+            }
+            .fileCloseBtn{
+                width: 4rem; height: 3rem;
+                font-size: 1.6rem;
+                line-height: 3rem;
+                text-align: center;
+                border-radius: 0 0.5rem 0 0;
+            }
+            @media all and (max-width:76.8rem){
+                .fileCloseBtn{
+                    width: 2.5rem; height: 2rem;
+                    font-size: 1.2rem;
+                    line-height: 2rem;
+                    text-align: center;
+                    border-radius: 0 0.5rem 0 0;
+                }
+            }
+            @media all and (min-width:76.8rem){
+                .fileCloseBtn{
+                    width: 4rem; height: 3rem;
+                    font-size: 1.6rem;
+                    line-height: 3rem;
+                    text-align: center;
+                    border-radius: 0 0.5rem 0 0;
+                }
+            }
+            .fileCloseBtn:hover{ background: rgb(228, 30, 30); color: white; cursor: pointer; }
+            .fileCloseBtn:active{ opacity: 0.7; }
+            .displayPortfolioBox{
+                width: 92rem; height: 74.71rem; border-radius: 0 0 0.4rem 0.4rem;
+                background: rgb(239, 228, 176);
+            }
+            @media all and (max-width:76.8rem){
+                .displayPortfolioBox{
+                    width: 37.5rem; height: 22.8rem; border-radius: 0 0 0.4rem 0.4rem;
+                    background: rgb(239, 228, 176);
+                }
+            }
+            @media all and (min-width:76.8rem){
+                .displayPortfolioBox{
+                    width: 92rem; height: 74.71rem; border-radius: 0 0 0.4rem 0.4rem;
+                    background: rgb(239, 228, 176);
+                }
+            }
+            .displayPortfolio{
+                width: 80rem; height: 63rem; display: block;
+                margin: 0rem auto;
+            }
+            @media all and (max-width:76.8rem){
+                .displayPortfolio{
+                    width: 34rem; height: 22rem; display: block;
+                    margin: 0rem auto;
+                }
+            }
+            @media all and (min-width:76.8rem){
+                .displayPortfolio{
+                    width: 80rem; height: 63rem; display: block;
+                    margin: 0rem auto;
+                }
+            }
+            .jinsuPic{
+                width: 75.96rem; height: 60rem;
+                margin: 3rem 0 0 2rem;
+                border-radius: 1rem;
+                box-shadow: 0 0 0.1rem 0.1rem #333;
+            }
+            .arrayCalPic{
+                width: 76rem; height: 35.01rem;
+                border-radius: 1rem;
+                box-shadow: 0 0 0.1rem 0.1rem #333;
+                margin: 10rem 0 18rem 2rem;
+                display: none;
+            }
+            @media all and (max-width:76.8rem){
+                .jinsuPic{
+                    width: 22.79rem; height: 18rem;
+                    margin: 1rem 0 0rem 5.6rem;
+                    border-radius: 1rem;
+                    box-shadow: 0 0 0.1rem 0.1rem #333;
+                }
+                .arrayCalPic{
+                    width: 32rem; height: 14.74rem;
+                    border-radius: 1rem;
+                    box-shadow: 0 0 0.1rem 0.1rem #333;
+                    margin: 2rem 0 2.3rem 1rem;
+                    display: none;
+                }
+            }
+            @media all and (min-width:76.8rem){
+                .jinsuPic{
+                    width: 75.96rem; height: 60rem;
+                    margin: 3rem 0 0 2rem;
+                    border-radius: 1rem;
+                    box-shadow: 0 0 0.1rem 0.1rem #333;
+                }
+                .arrayCalPic{
+                    width: 76rem; height: 35.01rem;
+                    border-radius: 1rem;
+                    box-shadow: 0 0 0.1rem 0.1rem #333;
+                    margin: 10rem 0 18rem 2rem;
+                    display: none;
+                }
+            }
+            .btnArea{
+                width: 50rem; height: 5rem;
+                margin: 3rem auto;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+            .portBtn{
+                width: 15rem; height: 5rem;
+                background: #df3636;
+                border-radius: 1rem;
+                display: inline-block;
+                text-align: center;
+                letter-spacing: 0.2rem;
+                box-shadow: 0 0 0.1rem 0.1rem #df3636;
+            }
+            @media all and (max-width:76.8rem){
+                .btnArea{
+                    width: 20rem; height: 2rem;
+                    margin: 0.5rem auto;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                }
+                .portBtn{
+                    width: 6rem; height: 2rem;
+                    background: #df3636;
+                    border-radius: 0.8rem;
+                    display: inline-block;
+                    text-align: center;
+                    letter-spacing: 0.1rem;
+                    box-shadow: 0 0 0.1rem 0.1rem #df3636;
+                }
+            }
+            @media all and (min-width:76.8rem){
+                .btnArea{
+                    width: 50rem; height: 5rem;
+                    margin: 3rem auto;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                }
+                .portBtn{
+                    width: 15rem; height: 5rem;
+                    background: #df3636;
+                    border-radius: 1rem;
+                    display: inline-block;
+                    text-align: center;
+                    letter-spacing: 0.2rem;
+                    box-shadow: 0 0 0.1rem 0.1rem #df3636;
+                }
+            }
+            .portBtn:hover{ background: #ff3c19; }
+            .btnText{
+                font-size: 2rem;
+                line-height: 5rem;
+                text-decoration: none;
+                color: white;
+            }
+            @media all and (max-width:76.8rem){
+                .btnText{
+                    font-size: 1rem;
+                    line-height: 2rem;
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+            @media all and (min-width:76.8rem){
+                .btnText{
+                    font-size: 2rem;
+                    line-height: 5rem;
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+            .sideBarMainBox{
+                width: 4rem; height: 30rem;
+                position: fixed;
+                z-index: 5;
+                top: 30%; right: 1%;
+                display: block;
+                border-radius: 1rem;
+            }
+            .sideBtn{
+                width: 4rem; height: 4rem;
+                background: #ef3945;
+                text-align: center;
+                margin: 2.8rem 0 0 -1rem;
+                border-radius: 50%;
+                list-style: none;
+                cursor: pointer;
+                border: 0.5rem solid #c7c700;
+                box-shadow: 0 0 0.1rem 0.1rem #c7c700;
+            }
+            .sideAboutMe{ background: #2adb2a; }
+            .sideICanDo{ background: #fd8c00; }
+            .sidePort{ background: #207bed; }
+            .sideBtn:hover{ background: #ff3c19; }
+            .sideMainText{
+                text-decoration: none;
+                font-size: 2rem;
+                line-height: 4rem;
+                text-align: center;
+                color: white;
+            }
+            @media all and (max-width:76.8rem){
+                .sideBarMainBox{ display: none; }
+            }
+            @media all and (min-width:76.8rem){
+                .sideBarMainBox{
+                    width: 4rem; height: 30rem;
+                    position: fixed;
+                    z-index: 5;
+                    top: 30%; right: 1%;
+                    display: block;
+                    border-radius: 1rem;
+                }
+                .sideBtn{
+                    width: 4rem; height: 4rem;
+                    background: #ef3945;
+                    text-align: center;
+                    margin: 2.8rem 0 0 -1rem;
+                    border-radius: 50%;
+                    list-style: none;
+                    cursor: pointer;
+                    border: 0.5rem solid #c7c700;
+                    box-shadow: 0 0 0.1rem 0.1rem #c7c700;
+                }
+                .sideAboutMe{ background: #2adb2a; }
+                .sideICanDo{ background: #fd8c00; }
+                .sidePort{ background: #207bed; }
+                .sideBtn:hover{ background: #ff3c19; }
+                .sideMainText{
+                    text-decoration: none;
+                    font-size: 2rem;
+                    line-height: 4rem;
+                    text-align: center;
+                    color: white;
+                }
+            }
+            .moveLeft{
+                width: 14rem; height: 4rem;
+                background: #ef3945;
+                text-align: center;
+                margin: 2.8rem 0 0 -1rem;
+                border-radius: 1rem;
+                list-style: none;
+                cursor: pointer;
+                transition: all linear 0.1s;
+                letter-spacing: 0.2rem;
+                overflow: hidden;
+            }
+            .moveLeft:hover{
+                margin-left: -11rem; background: #ff3c19;
+            }
+            .bottomCutRight{
+                width: 0; height: 0;
+                border-top: 16rem solid transparent;
+                border-right: 16rem solid #5e6c6c;
+                border-bottom: 16rem solid #5e6c6c;
+                border-left: 16rem solid transparent;
+                position: absolute;
+                z-index: 1;
+                bottom: -3rem; right: 0;
+            }
+            .bottomICH{ margin: 0; top: 1rem; left: -7rem; }
+            .bottomHideBox{
+                width: 35rem; height: 35rem;
+                background: transparent;
+                position: absolute;
+                bottom: -3rem; right: 0;
+                overflow: hidden;
+                z-index: 1;
+            }
+            .bottomRightLine{
+                width: 50rem; height: 2.3rem;
+                transform: rotate(135deg);
+                background: orange;
+                position: absolute;
+                bottom: 15rem; right: -8rem;
+            }
+            @media all and (max-width:76.8rem){
+                .bottomCutRight, .bottomHideBox{ display: none; }
+            }
+            @media all and (min-width:76.8rem){
+                .bottomCutRight{
+                    width: 0; height: 0;
+                    border-top: 16rem solid transparent;
+                    border-right: 16rem solid #5e6c6c;
+                    border-bottom: 16rem solid #5e6c6c;
+                    border-left: 16rem solid transparent;
+                    position: absolute;
+                    z-index: 1;
+                    bottom: -3rem; right: 0;
+                }
+            .bottomICH{ margin: 0; top: 1rem; left: -7rem; }
+                .bottomHideBox{
+                    width: 35rem; height: 35rem;
+                    background: transparent;
+                    position: absolute;
+                    bottom: -3rem; right: 0;
+                    overflow: hidden;
+                    z-index: 1;
+                }
+                .bottomRightLine{
+                    width: 50rem; height: 2.3rem;
+                    transform: rotate(135deg);
+                    background: orange;
+                    position: absolute;
+                    bottom: 15rem; right: -8rem;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="topCutLeft">
+            <p class="nameICH">I C H</p>
+            <div class="topCutLeftInner"></div>
+        </div>
+        <div id="sideBarMainBox" class="sideBarMainBox">
+            <ul>
+                <li id="sideHome" class="sideBtn sideHome">
+                    <a class="sideMainText" id="sideHomeText" href="#backImg">H</a>
+                </li>
+                <li id="sideAboutMe" class="sideBtn sideAboutMe">
+                    <a class="sideMainText" id="sideAboutMeText" href="#infoMainBox">A</a>
+                </li>
+                <li id="sideICanDo" class="sideBtn sideICanDo">
+                    <a class="sideMainText" id="sideICanDoText" href="#iCanDoMainBox">I</a>
+                </li>
+                <li id="sidePort" class="sideBtn sidePort">
+                    <a class="sideMainText" id="sidePortText" href="#portfolioMainBox">P</a>
+                </li>
+            </ul>
+        </div>
+        <main id="mainBox" class="mainBox">
+            <header id="backImg" class="backImg">
+                <section class="monitor">
+                    <article id="topBar" class="topBar">
+                    </article>
+                    <article class="videoBox">
+                        <video class="tourVideo" autoplay muted loop="10">
+                            <source src="../video/tour2.mp4" type="video/mp4">
+                        </video>
+                        <p class="vedioMidText homeText1">여행은 새로운 것에 대한 경험</p>
+                        <p class="vedioMidText homeText2">배우고 도전하는 개발자</p>
+                        <p class="vedioMidText homeText3">인창훈</p>
+                    </article>
+                    <nav id="navBox" class="navBox">
+                        <ul class="menuMainBox">
+                            <li id="homeBtn" class="menuBox"><a href="#backImg" class="menuBoxA homeBtn">HOME</a></li>
+                            <li class="menuBox"><a href="#infoMainBox" id="#aboutMeBtn" class="menuBoxA aboutMeBtn">ABOUT ME</a></li>
+                            <li class="menuBox"><a href="#iCanDoMainBox" class="menuBoxA iCanDoBtn">I CAN DO</a></li>
+                            <li class="menuBox"><a href="#portfolioMainBox" class="menuBoxA portfolioBtn">PORTFOLIO</a></li>
+                        </ul>
+                    </nav>
+                    <div class="navBox2"></div>
+                </section>
+            </header>
+            <section id="infoMainBox" class="infoMainBox">
+                <article class="aboutMePic">
+                    <div class="cutPic1"></div>
+                    <div class="myHistory">
+                        <ul>
+                            <li class="emptyLine"></li>
+                            <li class="historyText historyYear">2006
+                                <div class="listCircle"></div><span class="historyText historyDetail">경일관광경영고등학교 졸업</span>
+                            </li>
+                            <li class="emptyLine"></li>
+                            <li class="historyText historyYear">2014
+                                <div class="listCircle"></div><span class="historyText historyDetail">백석대학교 관광경영과 졸업</span>
+                            </li>
+                            <li class="emptyLine"></li>
+                            <li class="historyText historyYear">2021
+                                <div class="listCircle"></div><span class="historyText historyDetail">핸드폰매장 운영(4년6개월)</span>
+                            </li>
+                            <li class="emptyLine"></li>
+                            <li class="historyText historyYear">2023
+                                <div class="listCircle"></div><span class="historyText historyDetail">라인컴퓨터아트학원(6개월)</span>
+                                <span class="historyText hText1">Java기반 웹/앱 개발과정 수료</span>
+                            </li>
+                            <li class="emptyLine emptyLineBottom"></li>
+                        </ul>
+                    </div>
+                    <div class="aboutMeTextArea">
+                        <h1 class="headAM1">WHO AM I?</h1>
+                        <h2 class="headAM2">도 전</h2>
+                        <h2 class="headAM2 headAM3">노 력</h2>
+                        <h2 class="headAM2 headAM4">활 발</h2>
+                    </div>
+                    <div class="contactMainBox">
+                        <div class="showInfo showInfo1">&lt<span class="fontS tagColor">script</span>&gt</div>
+                        <div class="showInfo showInfo2">
+                            <span class="fontS lemonColor">$</span><span class="fontS yellowColor">(</span>
+                            <span class="fontS orangeColor">"#인창훈"</span>
+                            <span class="fontS yellowColor">)</span><span class="fontS lemonColor">.on</span><span class="fontS yellowColor">(</span>
+                            <span class="fontS orangeColor">"focus"</span><span class="fontS whiteColor">,&nbsp</span><span class="fontS purpleColor">( )&nbsp</span><span class="fontS tagColor">=&gt&nbsp</span><span class="fontS purpleColor">{</span></div>
+                        <div class="showInfo showInfo3"><a href="tel:010-9347-8806">
+                            <span class="fontS tagColor">console</span><span class="fontS whiteColor">.</span><span class="fontS lemonColor">log</span><span class="fontS tagColor">(</span>
+                            <span class="fontS orangeColor">"Tel: 010-9347-8806"</span>
+                            <span class="fontS tagColor">)</span><span class="fontS whiteColor">;</span></a></div>
+                        <div class="showInfo showInfo4"><a href="https://open.kakao.com/o/ssrz199e" target="blank">
+                            <span class="fontS tagColor">console</span><span class="fontS whiteColor">.</span><span class="fontS lemonColor">log</span><span class="fontS tagColor">(</span>
+                            <span class="fontS orangeColor">"Kakao ID: inchangh"</span>
+                            <span class="fontS tagColor">)</span><span class="fontS whiteColor">;</span></a></div>
+                        <div class="showInfo showInfo5"><a href="mailto:qwaszxa88@naver.com">
+                            <span class="fontS tagColor">console</span><span class="fontS whiteColor">.</span><span class="fontS lemonColor">log</span><span class="fontS tagColor">(</span>
+                            <span class="fontS orangeColor">"E-mail: qwaszxa88@naver.com"</span>
+                            <span class="fontS tagColor">)</span><span class="fontS whiteColor">;</span></a></div>
+                        <div class="showInfo showInfo6">
+                            <span class="fontS tagColor">console</span><span class="fontS whiteColor">.</span><span class="fontS lemonColor">log</span><span class="fontS tagColor">(</span>
+                            <span class="fontS orangeColor">"Address: 안산시 단원구"</span>
+                            <span class="fontS tagColor">)<span class="fontS whiteColor">;</span></div>
+                        <div class="showInfo showInfo7">
+                            <span class="fontS purpleColor">}</span><span class="fontS yellowColor">)</span><span class="fontS whiteColor">;</span></div>
+                        <div class="showInfo showInfo8">&lt/<span class="fontS tagColor">script</span>&gt</div></div>
+                    <div class="cutPic2"></div>
+                </article>
+            </section>
+            <div class="iCanDoBackground"></div>
+            <section id="iCanDoMainBox" class="iCanDoMainBox">
+                <div class="leftSide"></div>
+                <div class="rightSide">
+                    <div class="rightSideTop"></div>
+                    <div class="rightSideBottom"></div>
+                    <div class="rightBottomEmpty"></div>
+                </div>
+                <article id="iCanDoHeadBox" class="iCanDoHeadBox">
+                    <div class="clickImg">
+                        <div class="click1">CLICK</div>
+                        <div class="click2"></div>
+                    </div>
+                    <div class="sidePadding">
+                        <div class="iCanDoTitle">I can do</div>
+                    </div>
+                </article>
+                <article id="programPicBox" class="programPicBox">
+                    <div id="htmlPicBox" class="picBox htmlPicBox">
+                        <img id="htmlPic" class="programPic htmlPic" src="../image/html_icon.png" alt="html icon">
+                    </div>
+                    <div id="cssPicBox" class="picBox cssPicBox">
+                        <img id="cssPic" class="programPic cssPic" src="../image/css_icon.png" alt="css icon">
+                    </div>
+                    <div id="jsPicBox" class="picBox jsPicBox">
+                        <img id="jsPic" class="programPic jsPic" src="../image/js_icon.png" alt="javascript icon">
+                    </div>
+                    <div id="jqueryPicBox" class="picBox jqueryPicBox">
+                        <img id="jqueryPic" class="programPic jqueryPic" src="../image/jquery_icon.png" alt="jquery icon">
+                    </div>
+                    <div id="javaPicBox" class="picBox javaPicBox">
+                        <img id="javaPic" class="programPic javaPic" src="../image/java_icon.png" alt="java icon">
+                    </div>
+                    <div id="sassPicBox" class="picBox sassPicBox">
+                        <img id="sassPic" class="programPic sassPic" src="../image/sass_icon.png" alt="sass icon">
+                    </div>
+                    <div id="nodePicBox" class="picBox nodePicBox">
+                        <img id="nodePic" class="programPic nodePic" src="../image/node_js.png" alt="nodejs icon">
+                    </div>
+                    <div id="sqlPicBox" class="picBox sqlPicBox">
+                        <img id="sqlPic" class="programPic sqlPic" src="../image/MySQL.png" alt="sql icon">
+                    </div>
+                    <div id="pugPicBox" class="picBox pugPicBox">
+                        <img id="pugPic" class="programPic pugPic" src="../image/pug_icon.png" alt="pug icon">
+                    </div>
+                    <div id="iCanDoModal" class="iCanDoModal">
+                        <div class="modalTop">
+                            <h3 id="modalHeadText" class="modalHeadText"></h3>
+                        </div>
+                        <div class="modalMid">
+                            <p id="modalMidText" class="modalMidText"></p>
+                        </div>
+                        <div class="modalBottom">
+                            <div id="closeBox2" class="closeBox2">CLOSE</div>
+                        </div>
+                    </div>
+                </article>
+                <section id="portfolioMainBox" class="portfolioMainBox">
+                    <div class="portTitleBox">
+                        <div class="portfolioTitle">PORTFOLIO</div>
+                    </div>
+                    <article class="portfolioBottomBox">
+                        <nav class="directoryMainBox">
+                            <figure class="directoryBox directoryBox1">
+                                <img id="directory1" class="sameDirectory directory1" src="../image/jinsuPavicon.png" alt="directory">
+                                <figcaption id="directoryText1" class="figText">진수변환기</figcaption>
+                            </figure>
+                            <figure class="directoryBox directoryBox2">
+                                <img id="directory2" class="sameDirectory directory2" src="../image/calculator.png" alt="directory">
+                                <figcaption class="figText">행열계산기</figcaption>
+                            </figure>
+                        </nav>
+                        <div class="portfolioPrintMainBox">
+                            <div class="chromeDisplay">
+                                <div class="fileTopBar">
+                                    <div class="fileLeftEmpty"></div>
+                                    <div id=fileName class="fileName">진수변환기</div>
+                                    <div class="fileRightEmpty">
+                                        <div id="fileCloseBtn" class="fileCloseBtn">X</div>
+                                    </div>
+                                </div>
+                                <div class="displayPortfolioBox">
+                                    <div id="displayPortfolio1" class="displayPortfolio displayPortfolio1">
+                                        <img id="jinsuPic" class="portPic jinsuPic" src="../image/jinsu.png" alt="jinsu portfolio">
+                                        <img id="arrayCalPic" class="portPic arrayCalPic" src="../image/arrayCal.png" alt="array calculator">
+                                        <div class="btnArea">
+                                            <div id="goSiteBtn" class="portBtn goSiteBtn">
+                                                <a id="goSiteA" class="btnText" href="http://kkms4001.iptime.org/~c17st23/portfolio02/jinsu.html" target="blank">Go Site</a>
+                                            </div>
+                                            <div id="downloadBtn" class="portBtn downloadBtn">
+                                                <a id="downloadA" class="btnText" href="#">Download</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+            </section>
+        </main>
+        <a class="goTop" href="#mainBox">^</a>
+        <div class="bottomCutRight">
+            <div class="bottomICH nameICH">I C H</div>
+        </div>
+        <div class="bottomHideBox">
+            <div class="bottomRightLine"></div>
+        </div>
+        <script>
+            // 1. 홈화면 2. about me 3. i can do 4. portfolio
+
+            $("#sideHome").mouseenter(()=>{
+                $("#sideHome").addClass("moveLeft");
+                $("#sideHomeText").text("HOME");
+            })
+            $("#sideHome").mouseleave(()=>{
+                $("#sideHome").removeClass("moveLeft");
+                $("#sideHomeText").text("H");
+            });
+            $("#sideAboutMe").mouseenter(()=>{
+                $("#sideAboutMe").addClass("moveLeft");
+                $("#sideAboutMeText").text("ABOUT ME");
+                $(".moveLeft").css("background", "#2adb2a");
+            });
+            $("#sideAboutMe").mouseleave(()=>{
+                $("#sideAboutMe").removeClass("moveLeft");
+                $("#sideAboutMeText").text("A");
+            });
+            $("#sideICanDo").mouseenter(()=>{
+                $("#sideICanDo").addClass("moveLeft");
+                $("#sideICanDoText").text("I CAN DO");
+                $(".moveLeft").css("background", "#fd8c00");
+            });
+            $("#sideICanDo").mouseleave(()=>{
+                $("#sideICanDo").removeClass("moveLeft");
+                $("#sideICanDoText").text("I");
+            });
+            $("#sidePort").mouseenter(()=>{
+                $("#sidePort").addClass("moveLeft");
+                $("#sidePortText").text("PORTFOLIO");
+                $(".moveLeft").css("background", "#207bed");
+            });
+            $("#sidePort").mouseleave(()=>{
+                $("#sidePort").removeClass("moveLeft");
+                $("#sidePortText").text("P");
+            });
+            let modalOn = () => {
+                $("#iCanDoModal").css("display", "block");
+            }
+            $("#closeBox2").click(function(){
+                $("#iCanDoModal").css("display", "none");
+            });
+            $("#htmlPic").click(function(){
+                $("#modalHeadText").html("HTML 90%");
+                $("#modalMidText").html("웹 목적에 맞는 태그들을 능숙하게 사용 가능합니다.");
+                modalOn();
+            });
+            $("#cssPic").click(function(){
+                $("#modalHeadText").html("CSS 90%");
+                $("#modalMidText").html("웹 디자인에 능숙하고 현재는 반응형웹 만들기를 공부중입니다.");
+                modalOn();
+            });
+            $("#jsPic").click(function(){
+                $("#modalHeadText").html("JavaScript 80%");
+                $("#modalMidText").html("웹 동작들을 컨트롤 할 수 있고, 간단한 프로그램들을 제작할 수 있습니다.");
+                modalOn();
+            });
+            $("#jqueryPic").click(function(){
+                $("#modalHeadText").html("jQuery 70%");
+                $("#modalMidText").html("문법들을 공부중이며 JavaScript 코드를 간결하게 사용 가능합니다.");
+                modalOn();
+            });
+            $("#javaPic").click(function(){
+                $("#modalHeadText").html("Java 50%");
+                $("#modalMidText").html("간단한 프로그램 제작 가능하고, Eclipse를 Linux에 연결하여 사용 가능합니다.");
+                modalOn();
+            });
+            $("#sassPic").click(function(){
+                $("#modalHeadText").html("SASS 80%");
+                $("#modalMidText").html("SASS 명령어를 활용하여 CSS 코드를 많은 부분 줄일 수 있습니다.");
+                modalOn();
+            });
+            $("#nodePic").click(function(){
+                $("#modalHeadText").html("Node.js 60%");
+                $("#modalMidText").html("MySQL, Pug와 연동 가능하고 문법과 query 활용 부분을 공부중입니다.");
+                modalOn();
+            });
+            $("#sqlPic").click(function(){
+                $("#modalHeadText").html("MySQL 50%");
+                $("#modalMidText").html("기초적인 스키마 설계가 가능하고 필요에따라 내용을 추가, 삭제, 수정을 할 수 있습니다.");
+                modalOn();
+            });
+            $("#pugPic").click(function(){
+                $("#modalHeadText").html("Pug 90%");
+                $("#modalMidText").html("Pug를 사용하여 HTML 문법을 많은 부분 줄일 수 있습니다.");
+                modalOn();
+            });
+            $("#fileCloseBtn").click(function(){
+                $(".displayPortfolio").css("display", "none");
+                $("#fileName").text("").css("background", "#e1e1e3");
+
+            });
+            $("#directory1").click(() => {
+                $("#displayPortfolio1").show();
+                $(".portPic").hide();
+                $("#jinsuPic").show();
+                $("#fileName").text("진수변환기").css("background", "white");
+                $("#goSiteA").attr("href", "http://kkms4001.iptime.org/~c17st23/portfolio02/jinsu.html");
+            });
+            $("#directory2").click(() => {
+                $("#displayPortfolio1").show();
+                $(".portPic").hide();
+                $("#arrayCalPic").show();
+                $("#fileName").text("행열계산기").css("background", "white");
+                $("#goSiteA").attr("href", "http://kkms4001.iptime.org/~c17st23/matrix/Build/html/array_cal/arrayCal.html");
+            });
+            
+        </script>
+    </body>
+</html>

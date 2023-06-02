@@ -1,0 +1,665 @@
+*{ 
+    margin: 0; padding: 0; font-family: 'Noto Sans KR', sans-serif; color: #333; 
+    font-size: 10px; scroll-behavior: smooth; 
+}
+body{ background-color: rgb(239, 228, 176); position: relative; z-index: -10; }
+.topCutLeft{
+    width: 0; height: 0;
+    border-top: 16rem solid #5e6c6c;
+    border-right: 16rem solid transparent;
+    border-bottom: 16rem solid transparent;
+    border-left: 16rem solid #5e6c6c;
+    position: absolute;
+    z-index: 1;
+}
+.nameICH{
+    font-size: 9rem; color: white;
+    width: 22rem; height: 6rem;
+    text-align: center; line-height: 6rem;
+    transform: rotate(315deg);
+    margin: -6.6rem 0 0 -18rem;
+    position: absolute; top: -1rem; left: 2rem;
+    font-family: 'Tilt Warp', cursive;
+    text-shadow: 0.1rem 0.1rem 0.2rem #333;
+}
+.topCutLeftInner{
+    width: 53rem; height: 2.3rem;
+    transform: rotate(135deg);
+    position: absolute;
+    background-color: orange;
+    margin: 0 0 0 -26rem;
+}
+.mainBox{
+    width: 120rem; height: 428rem;
+    background-color: rgb(239, 228, 176);
+    position: relative;
+    left: 50%;
+    margin-left: -60rem;
+}
+.backImg{
+    width: 120rem; height: 82rem;
+    padding-top: 10rem;
+    background-image: url(../image/apple_macbook2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 120rem 82rem;
+    z-index: 0;
+}
+.monitor{
+    width: 91.8rem; height: 64.1rem;
+    margin-top: -8.9rem;
+    margin-left: 14.1rem;
+    background: #333;
+}
+.topBar{
+    width: 91.6rem; height: 0rem;
+    margin-top: 10rem;
+}
+.portfolio{
+    display: inline-block;
+    width: 6rem; height: 6rem;
+    text-align: center;
+    line-height: 6rem;
+    font-size: 5.5rem;
+    color: white;
+    position: absolute;
+    top: 23rem; left: 35rem;
+}
+.navBox{
+    width: 71.6rem; height: 6rem;
+    margin-top: -6.9rem;
+    margin-left: 10rem;
+    border-radius: 0.5rem;
+    transition: all linear 0.3s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.navBox2{
+    width: 91.8rem; height: 1rem;
+    background-color: #333;
+    margin-top: 43.4rem;
+    position: absolute;
+    top: 31rem;  
+}
+.menuBox{ 
+    margin: 1.6rem 1.3rem 0 1.3rem;; 
+    width: 15rem; height: 4rem;
+    background-color: #c7c700;
+    list-style: none;
+    display: inline-block;
+    border-radius: 0.8rem;
+    letter-spacing: 0.1rem;
+    box-shadow: 0 0 0.1rem 0.1rem #c7c700;
+    border: 0rem solid yellow;
+    transition: all linear 0.2s;
+    text-align: center;
+}
+.menuBoxA{
+    line-height: 4rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    text-decoration: none;
+    transition: all linear 0.2s;
+}
+.menuBox:hover{ 
+    cursor: pointer; 
+    background-color: #ffff00; 
+    box-shadow: 0 0 0.1rem 0.1rem #ffff00; 
+}
+.infoMainBox{
+    width: 120rem; height: 110rem;
+    margin-top: 5rem;
+    position: relative;
+    z-index: 2;
+}
+.aboutMePic{
+    width: 110rem; height: 110rem;
+    margin-left: 5rem;
+    background-image: url(../image/myPic1.jpg);
+    background-size: 110rem 110rem;
+    border-radius: 1rem;
+}
+.myPic1{
+    width: 110rem; height: 110rem;
+    margin-left: 5rem;
+}
+.cutPic1{
+    width: 0rem; height: 0rem;
+    border-top: 18rem solid rgb(239, 228, 176);
+    border-right: 18rem solid transparent;
+    border-bottom: 18rem solid transparent;
+    border-left: 18rem solid rgb(239, 228, 176);
+    margin-top: 15rem;
+}
+.cutPic2{
+    width: 0; height: 0;
+    border-top: 15rem solid transparent;
+    border-right: 15rem solid rgb(239, 228, 176);
+    border-bottom: 15rem solid rgb(239, 228, 176);
+    border-left: 15rem solid transparent;
+    margin: 8.5rem 0 0 80.2rem;
+}
+.myHistory{
+    width: 28rem; height: 30rem;
+    margin: -1rem 0 0 5rem;
+    text-shadow: 0.1rem 0.1rem 0.2rem #333;
+    display: inline-block;
+}
+.emptyLine{
+    list-style: none;
+    width: 5rem; height: 2.5rem;
+    border-right: 0.2rem solid white;
+}
+.listCircle{
+    width: 0.5rem; height: 0.5rem;
+    border-radius: 50%;
+    box-shadow: 0 0 0.1rem 0.1rem white;
+    position: absolute;
+    margin: -1.6rem 0 0 4.6rem;
+    background: white;
+}
+.emptyLineBottom{ margin-top: -3rem; }
+.historyText{
+    font-size: 1.6rem; color: white;
+    margin: 0.2rem 0.2rem 0.2rem 0.2rem;
+    list-style-type: none;
+    display: inline-block;
+}
+.historyYear{
+    font-style: italic;
+}
+.historyDetail{
+    margin-left: 2rem;
+}
+.hText1{ margin-left: 6rem;}
+.aboutMeTextArea{
+    width: 50rem; height: 50rem;
+    background-color: transparent;
+    margin-left: 60rem;
+    margin-top: -27rem;
+    text-shadow: 0.1rem 0.1rem 0.2rem #333;
+}
+.headAM1{
+    font-size: 7rem;
+    text-align: center;
+    color: #18f2ff;
+    letter-spacing: 0.3rem;
+    margin-top: -56rem;
+    transform: rotate(15deg);
+}
+.headAM2{
+    font-size: 7rem;
+    color: #ef3945;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    margin: 1rem 0 0 -24rem; 
+    transform: rotate(350deg);
+}
+.headAM3{ 
+    color: #dfb469; 
+    transform: rotate(340deg);
+    margin: -2rem 0 0 15rem;
+}
+.headAM4{ 
+    color: #2adb2a; 
+    transform: rotate(30deg);
+    margin: 0rem 0 0 -15rem;
+}
+.aboutMeText1{
+    font-size: 2.5rem;
+    color: white;
+    letter-spacing: 0.2rem;
+    margin-top: 3rem;
+    text-align: center;
+}
+.myName{
+    font-size: 3rem;
+    color: white;
+}
+.contactMainBox{
+    width: 49.5rem; height: 20rem;
+    background: #111;
+    border-radius: 1rem;
+    margin: -4rem 0 0 57rem;
+    box-shadow: 0 0 0.1rem 0.1rem #333;
+}
+.showInfo{
+    width: 50rem; height: 2rem;
+    font-size: 1.6rem;
+    color: #808073;
+    line-height: 2rem;
+    letter-spacing: 0.1rem;
+    margin: 0.2rem 0 0 2rem;
+    text-decoration: none;
+}
+.showInfo > a > .orangeColor:hover{ color: #f78846; }
+.showInfo1{ padding-top: 1rem; }
+.showInfo2, .showInfo7{ margin-left: 5rem; }
+.showInfo3, .showInfo4, .showInfo5, .showInfo6{ margin-left: 8rem; }
+.fontS{ font-size: 1.6rem; }
+.tagColor{ color: #569cd6; }
+.lemonColor{ color: #d0dcaa; }
+.yellowColor{ color: yellow; }
+.orangeColor{ color: #ce723b; }
+.whiteColor{ color: white; }
+.purpleColor{ color: #da63a1; }
+.blueColor{ color: rgb(34, 34, 255); }
+
+.goTop{
+    width: 4.2rem; height: 4.2rem;
+    background-color: transparent;
+    border: 0rem solid #aaa;
+    border-radius: 50%;
+    font-size: 4.2rem;
+    text-align: center;
+    line-height: 5rem;
+    color: black;
+    box-shadow: 0 0 0.1rem 0.3rem black;
+    position: fixed;
+    top: 94%; left: 50%;
+    margin-left: -2rem;
+    cursor: pointer;
+    text-decoration: none;
+    z-index: 3;
+}
+.goTop:hover{ color: #777; box-shadow: 0 0 0.1rem 0.3rem #777; }
+.showInfo a{ text-decoration: none; }
+.iCanDoMainBox{
+    width: 120rem; height: 194rem;
+    margin-top: 14rem;
+    position: relative;
+    background-image: url(../image/iCanBack3.png);
+    background-size: 120rem 200rem;
+    z-index: 1;
+    border-radius: 0 0 2.5rem 2.5rem;
+}
+.iCanDoHeadBox{
+    width: 120rem; height: 10rem;
+    display: flex;
+    justify-content: center;
+}
+.iCanDoTitle{
+    width: 26rem; height: 8rem;
+    background: white;
+    font-size: 6rem;
+    line-height: 9rem;
+    text-align: center;
+    font-family: 'Kalam', cursive;
+    box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem #333;
+    border-radius: 1rem;
+    margin-top: 4rem;
+}
+.programPicBox{
+    width: 110rem; height: 80rem;
+    margin: 1rem 0 0 5rem;
+    display: inline-block;
+}
+.picBox{
+    width: 14rem; height: 14rem;
+    border-radius: 50%;
+    background-color: white;
+    display: inline-block;
+    margin: 5rem 0 0 5rem;
+    box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem #555;
+    border: 0rem solid #555;
+    position: absolute
+}
+.programPic{
+    width: 16rem; height: 11.08rem;
+    margin-top: 1.5rem; margin-left: -0.5rem;
+    cursor: pointer;
+    transition: all linear 0.5s;
+}
+.programPic:hover{ transform: rotate(360deg); }
+.htmlPicBox{ top: 13rem; left: 36rem; }
+.cssPicBox{ top: 33rem; left: 24rem; }
+.jsPicBox{ top: 13rem; left: 60rem; }
+.jqueryPicBox{ top: 33rem; left: 73rem; }
+.javaPicBox{ top: 33rem; left: 48rem; }
+.sassPicBox{ top: 54rem; left: 35rem; }
+.nodePicBox{ top: 54rem; left: 10rem; }
+.sqlPicBox{ top: 54rem; left: 60rem; }
+.pugPicBox{ top: 54rem; left: 86rem; }
+.javaPic{ margin: 1rem 0 0 -1rem; }
+.jqueryPic{ margin-top: 2rem; }
+.nodePic{ width: 8.66rem; height: 10rem; margin: 2rem 0 0 3rem; }
+.sqlPic{ width: 8rem; height: 8rem; margin-top: 2.5rem; margin-left: 3rem; }
+.iCanDoModal{
+    width: 40rem; height: 30rem;
+    background-color: white;
+    position: absolute;
+    top: 32rem; left: 40rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 0.2rem 0.2rem #444;
+    display: none;
+}
+.modalTop{
+    width: 40rem; height: 7rem;
+    border-bottom: 0.1rem solid #333;
+    text-align: center;
+    line-height: 7rem;
+    padding: 0.2rem 0 0.2rem 0;
+}
+.modalHeadText{ font-size: 2.5rem; letter-spacing: 0.3rem; }
+.modalMid{ width: 40rem; height:16rem; border-bottom: 0.1rem solid #333; }
+.modalMidText{
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    line-height: 3rem;
+    padding: 1.5rem 2rem 0 2rem;
+}
+.closeBox2{
+    width: 40rem; height: 6.4rem;
+    background-color: #ededf9;
+    text-align: center;
+    line-height: 6.4rem;
+    font-size: 2.5rem;
+    border-radius: 0 0 1.5rem 1.5rem;
+    letter-spacing: 0.5rem;
+    cursor: pointer;
+    transition: all linear 0.2s;
+}
+.closeBox2:hover{ background-color: #dfdfeb; }
+.videoBox{ 
+    width: 91.7rem; 
+    height: 61.2rem; 
+    background: #333; 
+    padding-top: 0.2rem;
+}
+.tourVideo{
+    width: 91.4rem; 
+    margin: 0.1rem 0 0 0.1rem;
+    box-shadow: 0 0 0.1rem 0.1rem #333;
+    border-radius: 0.5rem;
+}
+.vedioMidText{
+    font-size: 3rem;
+    color: #fff;
+    position: absolute;
+    top: 5%; left: 33%;
+    letter-spacing: 0.1rem;
+    text-shadow: 0.1rem 0.1rem 0.2rem #333;
+}
+.homeText2{ top: 6%; left: 36%; }
+.homeText3{
+    top: 11%; left: 67%;
+    font-size: 7rem;
+    letter-spacing: 0.5rem;
+}
+.portfolioMainBox{
+    width: 120rem; height: 95rem;
+    margin-top: 8rem;
+}
+.portTitlePic{
+    width: 60rem; opacity: 0.8; margin-left: 30rem; box-shadow: 0 0 0.2rem 0.2rem #333;
+}
+.portfolioBottomBox{
+    width: 120rem; height: 82rem;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+}
+.directoryMainBox{
+    width: 20rem; height: 80rem;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+}
+.directoryBox{ 
+    width: 16.26rem; height: 13rem;
+}
+.sameDirectory{ width: 7rem; margin: 1rem 0 0 4.5rem; cursor: pointer; }
+.sameDirectory:hover{ box-shadow: 0 0 0.2rem 0.2rem #333; background: #7e8787; }
+.sameDirectory:active{ opacity: 0.7; }
+.directory2{ border-radius: 1rem; }
+.figText{ font-size: 1.6rem; text-align: center; color: white; }
+.portfolioPrintMainBox{
+    width: 94rem; height: 83rem;
+}
+.chromeDisplay{
+    width: 92rem; height: 78rem;
+    margin: 1rem 0 0 -3rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.2rem 0.2rem #333;
+}
+.portfolioTitle{
+    width: 35rem;
+    height: 8rem;
+    background: white;
+    font-size: 6rem;
+    line-height: 9rem;
+    text-align: center;
+    font-family: 'Kalam', cursive;
+    box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem #333;
+    border-radius: 1rem;
+    margin: 4rem auto;
+}
+.fileTopBar{
+    width: 92rem; height: 3rem;
+    background: #e1e1e3;
+    border-radius: 0.5rem 0.5rem 0 0;
+    font-size: 1.4rem; line-height: 2rem;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    display: flex;
+    border-bottom: 0.3rem solid white;
+}
+.fileLeftEmpty{
+    width: 1rem; height: 3rem;
+    background: #e1e1e3;
+    border-radius: 0.5rem 0 1.5rem 0;
+}
+.fileName{
+    width: 20rem; height: 3rem;
+    background: white;
+    border-radius: 1rem 1rem 0 0;
+    font-size: 1.6rem;
+    text-align: left;
+    line-height: 3rem;
+    padding-left: 1rem;
+}
+.faviconImg{
+    width: 1.6rem; height: 1.6rem;
+}
+.fileRightEmpty{
+    width: 70rem; height: 3rem;
+    background: #e1e1e3;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 0 0.5rem 0 0;
+}
+.fileCloseBtn{
+    width: 4rem; height: 3rem;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 0 0.5rem 0 0;
+}
+.fileCloseBtn:hover{ background: rgb(228, 30, 30); color: white; cursor: pointer; }
+.fileCloseBtn:active{ opacity: 0.7; }
+.displayPortfolioBox{
+    width: 92rem; height: 74.71rem; border-radius: 0 0 0.4rem 0.4rem;
+    background: rgb(239, 228, 176);
+}
+.displayPortfolio{
+    width: 80rem; height: 63rem; display: block;
+    margin: 0rem auto;
+}
+.jinsuPic{
+    width: 75.96rem; height: 60rem;
+    margin: 3rem 0 0 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 0.2rem 0.2rem #333;
+}
+.arrayCalPic{
+    width: 76rem; height: 53.72rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 0.2rem 0.2rem #333;
+    margin: 10rem 0 18rem 2rem;
+    display: none;
+}
+.btnArea{
+    width: 50rem; height: 5rem;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.portBtn{
+    width: 15rem; height: 5rem;
+    background: #df3636;
+    border-radius: 1rem;
+    display: inline-block;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    box-shadow: 0 0 0.1rem 0.1rem #333;
+}
+.portBtn:hover{ background: #ff3c19; }
+.btnText{
+    font-size: 2rem;
+    line-height: 5rem;
+    text-decoration: none;
+    color: white;
+}
+.clickImg{
+    width: 30rem; height: 15rem;
+    position: absolute;
+    transform: rotate(320deg);
+    top: 23rem; left: 9rem;
+    animation-name: clickImage;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes clickImage{
+    0% { top: 7.5rem; left: 1rem; }
+}
+.click1{
+    width: 29rem; height: 6rem;
+    background: white;
+    border: 1rem solid #f95959;
+    text-align: center;
+    line-height: 6rem;
+    border-radius: 10rem;
+    font-size: 5rem;
+    font-family: 'Tilt Warp', cursive;
+    letter-spacing: 0.3rem;
+}
+.click2{
+    width: 0; height: 0;
+    border-top: 3rem solid #f95959;
+    border-right: 5rem solid transparent;
+    border-bottom: 5rem solid transparent;
+    border-left: 5rem solid transparent;
+    margin: 1rem 0 0 10rem;
+}
+.leftSide{
+    width: 0rem; height: 0rem;
+    border-top: 30rem solid #5e6c6c;
+    border-left: 30rem solid #5e6c6c;
+    border-right: 36rem solid transparent;
+    border-bottom: 25rem solid transparent;
+    position: absolute;
+    top: -19rem; left: 0rem;
+}
+.rightSide{
+    width: 120rem; height: 200rem;
+    position: absolute;
+    z-index: -2;
+    border-radius: 0 0 1rem 1rem;
+}
+.rightSideTop{
+    width: 0; height: 0;
+    border-top: 60rem solid transparent;
+    border-right: 60rem solid #5e6c6c;
+    border-bottom: 60rem solid #5e6c6c;
+    border-left: 60rem solid transparent;
+}
+.rightSideBottom{
+    width: 120rem; height: 74rem;
+    background: #5e6c6c;
+    border-radius: 0 0 1rem 1rem;
+}
+.rightBottomEmpty{
+    width: 0; height: 0;
+    border-top: 30rem solid transparent;
+    border-right: 30rem solid rgb(239, 228, 176);
+    border-bottom: 30rem solid rgb(239, 228, 176);
+    border-left: 30rem solid transparent;
+    position: absolute;
+    top: 134rem; left: 60rem;
+}
+.sideBarMainBox{
+    width: 4rem; height: 30rem;
+    position: fixed;
+    z-index: 1;
+    top: 30%; right: 1%;
+    display: block;
+    border-radius: 1rem;
+}
+.sideBtn{
+    width: 4rem; height: 4rem;
+    background: #ef3945;
+    text-align: center;
+    margin: 2.8rem 0 0 0rem;
+    border-radius: 50%;
+    list-style: none;
+    cursor: pointer;
+    border: 0.5rem solid #c7c700;
+    box-shadow: 0 0 0.1rem 0.1rem #c7c700;
+}
+.sideAboutMe{ background: #2adb2a; }
+.sideICanDo{ background: #fd8c00; }
+.sidePort{ background: #207bed; }
+.sideBtn:hover{ background: #ff3c19; }
+.sideMainText{
+    text-decoration: none;
+    font-size: 2rem;
+    line-height: 4rem;
+    text-align: center;
+    color: white;
+}
+.moveLeft{
+    width: 14rem; height: 4rem;
+    background: #ef3945;
+    text-align: center;
+    margin-top: 2.8rem;
+    border-radius: 1rem;
+    list-style: none;
+    cursor: pointer;
+    transition: all linear 0.1s;
+    letter-spacing: 0.2rem;
+    overflow: hidden;
+}
+.moveLeft:hover{
+    margin-left: -10rem; background: #ff3c19;
+}
+.bottomCutRight{
+    width: 0; height: 0;
+    border-top: 16rem solid transparent;
+    border-right: 16rem solid #5e6c6c;
+    border-bottom: 16rem solid #5e6c6c;
+    border-left: 16rem solid transparent;
+    position: absolute;
+    z-index: 1;
+    bottom: -3rem; right: 0;
+}
+.bottomICH{ margin: 0; top: 1rem; left: -7rem; }
+.bottomHideBox{
+    width: 35rem; height: 35rem;
+    background: transparent;
+    position: absolute;
+    bottom: -3rem; right: 0;
+    overflow: hidden;
+    z-index: 1;
+}
+.bottomRightLine{
+    width: 50rem; height: 2.3rem;
+    transform: rotate(135deg);
+    background: orange;
+    position: absolute;
+    bottom: 15rem; right: -8rem;
+}
